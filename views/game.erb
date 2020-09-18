@@ -1,0 +1,10 @@
+<h1> B A T T L E </h1>
+
+<div> <%= @game.player_1.name %> vs <%= @game.player_2.name %> </div>
+
+<div> <%= @game.player_1.name %>! You have <%= @game.player_1.hp %>HP </div>
+<div> <%= @game.player_2.name %>! You have <%= @game.player_2.hp %>HP </div>
+
+<div> <%= @game.turn.name %>, time to make your move! </div>
+
+<a href="/attack">Attack!</a>
