@@ -7,21 +7,21 @@ describe Game do
   let(:player_2) { double :player }
 
   describe "players can #attack" do 
-    it 'htis player' do 
+    it 'hits player' do 
       expect(player_2).to receive(:hit)
-      game.attack(player_2)
+      game.attack
     end 
   end   
 
   describe "turns" do 
     
     it 'begins as player_1\'s turn' do 
-      expect(game.turn).to eq player_1
+      expect(game.active).to eq player_1
     end 
 
     it 'switches turn from player_1 to player_2' do
       game.switch
-      expect(game.turn).to eq player_2
+      expect(game.active).to eq player_2
     end 
   
   end 

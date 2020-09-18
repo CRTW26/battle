@@ -17,8 +17,11 @@ class Game
   end 
 
   def switch 
-    @active == @player_1 ? @player.reverse! : @player
-    @player[0]
+    @player.reverse!
+    @active = @player[0]
   end 
 
 end 
+
+game = Game.new("Bob", "Lou")
+game.switch
