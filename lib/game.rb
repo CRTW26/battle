@@ -20,7 +20,7 @@ class Game
     @player.reverse!
     @active = @player[0]
   end 
-
+ 
 end 
 
 game = Game.new("Bob", "Lou")

@@ -2,4 +2,8 @@
 
 <div> <%= @game.active.name %>, you have <%= @game.active.hp  %>HP remaining! </div>
 
+<% if @game.active.hp <= 0 %>
+<div> <%= @game.active.name %> You lose! </div> 
+<% else %>
 <a href='/game'> <%= @game.active.name%>, you're up!</a>
+<% end %>

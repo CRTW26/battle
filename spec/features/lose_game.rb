@@ -1,4 +1,4 @@
-require './app'
+#require './app'
 
 feature 'losing the game' do
   scenario 'it goes to a lose screnn when HP is 0' do
